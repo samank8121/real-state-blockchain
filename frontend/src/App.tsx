@@ -1,5 +1,5 @@
 import React from 'react';
-import { useContract } from './utils/hooks/useContract';
+import { useContract } from './utils/hooks/contract';
 
 function App() {
   const { getContractRealState } = useContract();

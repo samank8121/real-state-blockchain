@@ -22,5 +22,7 @@ export type { ERC165 } from "./@openzeppelin/contracts/utils/introspection/ERC16
 export { ERC165__factory } from "./factories/@openzeppelin/contracts/utils/introspection/ERC165__factory";
 export type { IERC165 } from "./@openzeppelin/contracts/utils/introspection/IERC165";
 export { IERC165__factory } from "./factories/@openzeppelin/contracts/utils/introspection/IERC165__factory";
+export type { Deal } from "./contracts/deal.sol/Deal";
+export { Deal__factory } from "./factories/contracts/deal.sol/Deal__factory";
 export type { RealEstate } from "./contracts/real-state.sol/RealEstate";
 export { RealEstate__factory } from "./factories/contracts/real-state.sol/RealEstate__factory";

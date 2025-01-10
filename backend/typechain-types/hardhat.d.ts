@@ -46,6 +46,14 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IERC165__factory>;
     getContractFactory(
+      name: "Deal",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.Deal__factory>;
+    getContractFactory(
+      name: "IERC721",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IERC721__factory>;
+    getContractFactory(
       name: "RealEstate",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.RealEstate__factory>;
@@ -91,6 +99,16 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.IERC165>;
     getContractAt(
+      name: "Deal",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.Deal>;
+    getContractAt(
+      name: "IERC721",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IERC721>;
+    getContractAt(
       name: "RealEstate",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
@@ -129,6 +147,14 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.IERC165>;
     deployContract(
+      name: "Deal",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.Deal>;
+    deployContract(
+      name: "IERC721",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IERC721>;
+    deployContract(
       name: "RealEstate",
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.RealEstate>;
@@ -173,6 +199,16 @@ declare module "hardhat/types/runtime" {
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.IERC165>;
+    deployContract(
+      name: "Deal",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.Deal>;
+    deployContract(
+      name: "IERC721",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IERC721>;
     deployContract(
       name: "RealEstate",
       args: any[],

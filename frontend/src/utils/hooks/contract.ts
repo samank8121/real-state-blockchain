@@ -3,7 +3,7 @@ import { BrowserProvider, Contract } from "ethers";
 
 const contractAddresses = {
   realState: '0x5fbdb2315678afecb367f032d93f642f64180aa3',
-  contractB: '0xYourContractBAddress',
+  escrow: '0xYourContractBAddress',
 };
 
 export const useContract = () => {
